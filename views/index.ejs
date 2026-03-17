@@ -2,13 +2,30 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Demo - Informações do Servidor</title>
+  <title>Informações do Servidor</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    div {
+      background: white;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Informações do Servidor</h1>
-  <p>Endereço IP do Servidor: <%= ip %></p>
-  <p>Hora Atual do Servidor: <%= horaAtual %></p>
-  
+  <div>
+    <h2>Informações do Servidor</h2>
+    <p>IP: <%= ip %></p>
+    <p>Hora Atual: <%= horaAtual %></p>
+  </div>
 </body>
 </html>
